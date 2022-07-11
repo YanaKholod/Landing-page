@@ -6,11 +6,11 @@ const Main = () => {
     <div className={s.main}>
       <div className={s.mainText}>
         <p1> Awaken your infinite potential</p1>
-        <p2>
+        <div className={s.p2}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
-        </p2>
+        </div>
       </div>
       <div className={s.button}>
         <button>Book a session</button>
@@ -26,7 +26,7 @@ const Main = () => {
           src="https://www.birdspot.co.uk/wp-content/uploads/2019/10/birds-window.jpg"
           alt=""
         />
-        <p className={s.pic2Text}>Is your life is prison or a palace? </p>
+        <p>Is your life is prison or a palace? </p>
       </div>
     </div>
   );

@@ -1,14 +1,14 @@
 .main {
-  display:block;
+   display: grid;
    background-color: rgb(12, 88, 67);
    padding: 0;
-   margin: 0;
+   margin:0;
 
 
 }
 .mainText{
-   display:grid;
-   width: 500px;
+   grid-column: 1;
+   width: 400px;
    color: antiquewhite;
    margin: 30px;
 
@@ -16,27 +16,48 @@
 
 .mainText >p1{
    font-size: 70px;
-   padding-bottom: 50px;
 }
-.mainText >p2{
-  
-   font-size: 15px;
+.p2{
+   font-size: 17px;
+   margin-top: 30px;
 }
-.button{
-text-align: left;
-
+.button {
+   text-align: left;
+   margin-left: 60px;
+   margin-bottom: 100px;
 }
 .button >button{
-   background-color:  rgb(12, 88, 67);
-   margin-left: 15px;
+   cursor: pointer;
+   border:20px;
+   border-radius: 3px;
+   font-size: 15px;
+   width: 200px;
+   height: 50px;
+   background-color: rgba(6, 0, 0, 0.5);
+   color: antiquewhite ;
+
+}
+.pic1 {
+   grid-column: 2;
+   grid-row: 1;
 }
 .pic1 >img{
-   width: 300px;
-   height: 400px;
+   width: 320px;
+   height: 450px;
 
 }
-.pic2{
-   width: 100px;
-   height: 100px;
-
+.pic2 {
+   grid-column: 3;
+   grid-row: 1;
+}
+.pic2 >img{
+   margin-top: 50px;
+   width: 280px;
+   height: 320px;
+}
+.pic2 >p{
+   color: antiquewhite ;
+   font-size: 17px;
+   text-align: left;
+   margin-top: 50px;
 }
