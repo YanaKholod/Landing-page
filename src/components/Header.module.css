@@ -3,7 +3,7 @@
    align-items: center;
    justify-content:flex-start;
    padding: 10px 20px;
-   background-color: rgb(12, 88, 67);
+   background-color: rgb(1, 74, 53);
 
 }
 
@@ -37,7 +37,7 @@ list-style-type: none;
    cursor: pointer;
    border:none;
    outline: none;
-   background-color:  rgb(12, 88, 67);
+   background-color:  rgb(1, 74, 53);
    margin-left: 15px;
 }
 .butLogin {

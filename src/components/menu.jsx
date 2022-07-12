@@ -5,22 +5,22 @@ export const menu = [
   },
   {
     title: "About",
-    link: "/",
+    link: "/about",
   },
   {
     title: "Courses",
-    link: "/",
+    link: "/courses",
   },
   {
     title: "Services",
-    link: "/",
+    link: "/services",
   },
   {
     title: "Contacts",
-    link: "/",
+    link: "/contacts",
   },
   {
     title: "Download",
-    link: "/",
+    link: "/download",
   },
 ];

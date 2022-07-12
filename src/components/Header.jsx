@@ -1,6 +1,7 @@
 import React from "react";
 import { menu } from "./menu";
 import s from "./Header.module.css";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className={s.header}>
@@ -15,7 +16,7 @@ const Header = () => {
         <ul className={s.menu}>
           {menu.map((item, idx) => (
             <li>
-              <a href={item.link}>{item.title}</a>
+              <Link to={item.link}>{item.title}</Link>
             </li>
           ))}
         </ul>

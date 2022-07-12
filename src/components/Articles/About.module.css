@@ -1,0 +1,38 @@
+.aboutPage {
+   background-color: rgb(1, 74, 53);
+   border-top: 1px solid rgb(12, 110, 82);
+   display: grid;
+   grid-template-columns: repeat 3 1fr;
+}
+.aboutPage >h1{
+   text-align: center;
+   color: antiquewhite;
+   text-decoration-style: wavy;
+}
+.postsWrapper {
+   grid-template-columns: repeat(3, minmax(0, 350px));
+  justify-content: space-between;
+  margin: 30px auto;
+  grid-gap: 10px;
+  display: grid;
+  
+}
+.aboutText {
+   border: 1px solid rgb(12, 110, 82);
+   padding: 3px;
+}
+.aboutText >h3{
+font-size: 20px;
+color: antiquewhite;
+   
+}
+.aboutText >p{
+font-size: 15px;
+color: rgba(250, 235, 215, 0.685);
+}
+.aboutText >p::first-letter{
+   text-transform: uppercase;
+}
+.aboutText >h3::first-letter{
+   text-transform: uppercase;
+}
