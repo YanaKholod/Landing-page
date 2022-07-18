@@ -3,6 +3,7 @@ import s from "./About.module.css";
 
 const About = () => {
   const [posts, setPost] = useState([]);
+  const [loader, setLoader] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
@@ -10,12 +11,14 @@ const About = () => {
       );
       const data = await response.json();
       setPost(data);
+      setLoader(false);
     };
     fetchData();
   }, []);
   return (
     <div className={s.aboutPage}>
       <h1>About</h1>
+      {loader && "Loading..."}
       <div className={s.postsWrapper}>
         {posts.map((posts) => (
           <div className={s.aboutText}>

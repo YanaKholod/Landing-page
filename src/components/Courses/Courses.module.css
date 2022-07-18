@@ -1,0 +1,47 @@
+
+.courseWrapper{
+   display: grid;
+   background-color: rgb(1, 74, 53);
+   border-top: 1px solid rgb(12, 110, 82);
+   padding: 0;
+   margin:0;
+
+
+}
+.courseWrapper >h1{
+   text-align: center;
+   color: antiquewhite;
+}
+
+.courses{
+   grid-template-columns: repeat(2, minmax(0, 470px));
+   justify-content: space-between;
+   margin: 50px auto;
+   grid-gap: 20px;
+   display: grid;
+}
+.aboutText{
+   border: 3px solid rgb(12, 110, 82);
+   padding: 5px;
+}
+.aboutText >h3{
+   padding-top: 6px;
+   font-size: 20px;
+   color: antiquewhite;
+   text-align: center;
+
+}
+.aboutText >p{
+   font-size: 15px;
+   color: rgba(250, 235, 215, 0.685);
+   text-align: center;
+   margin-top: 6px;
+}
+.links >a{
+   display: block;
+   text-align:right;
+   color: antiquewhite;
+   text-decoration: none;
+   font-size: 16px;
+   padding: 10px;
+}

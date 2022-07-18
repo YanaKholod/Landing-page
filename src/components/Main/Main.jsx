@@ -23,7 +23,7 @@ const Main = () => {
       </div>
       <div className={s.pic2}>
         <img
-          src="https://www.birdspot.co.uk/wp-content/uploads/2019/10/birds-window.jpg"
+          src="https://www.islandinstitute.org/wp-content/uploads/2020/07/aaa-bird-in-window.jpg"
           alt=""
         />
         <p>Is your life is prison or a palace? </p>

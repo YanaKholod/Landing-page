@@ -43,9 +43,10 @@
    grid-row: 1;
 }
 .pic1 >img{
+   padding-top: 35px;
    width: 320px;
    height: 450px;
-   border-radius: 10px;
+   
 }
 .pic2 {
    grid-column: 3;

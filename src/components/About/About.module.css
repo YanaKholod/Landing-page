@@ -1,3 +1,6 @@
+*{
+   background-color: rgb(1, 74, 53);
+}
 .aboutPage {
    background-color: rgb(1, 74, 53);
    border-top: 1px solid rgb(12, 110, 82);
@@ -7,7 +10,6 @@
 .aboutPage >h1{
    text-align: center;
    color: antiquewhite;
-   text-decoration-style: wavy;
 }
 .postsWrapper {
    grid-template-columns: repeat(3, minmax(0, 350px));
@@ -16,10 +18,12 @@
   grid-gap: 10px;
   display: grid;
   
+  
 }
 .aboutText {
-   border: 1px solid rgb(12, 110, 82);
-   padding: 3px;
+   border: 3px solid rgb(12, 110, 82);
+   padding: 5px;
+   
 }
 .aboutText >h3{
 font-size: 20px;
