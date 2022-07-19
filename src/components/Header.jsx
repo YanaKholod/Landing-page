@@ -15,7 +15,7 @@ const Header = () => {
       <div className={s.wrapper}>
         <ul className={s.menu}>
           {menu.map((item, idx) => (
-            <li>
+            <li key={item.id}>
               <Link to={item.link}>{item.title}</Link>
             </li>
           ))}
