@@ -1,0 +1,23 @@
+.allCourse{
+   display: block;
+}
+.allCourse >h1{
+   text-align: center;
+   color: antiquewhite;
+   font-size: 28px;
+}
+.content{
+   padding: 20px;
+   text-align: center;
+   color: antiquewhite;
+   font-size: 20px;
+}
+.description{
+   column-width: 33%;
+   column-count: 3;
+   column-gap: 4%;
+   text-align: center;
+   color:rgba(250, 235, 215, 0.575);
+   font-size: 18px;
+   padding: 30px;
+}
