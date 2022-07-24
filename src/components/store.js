@@ -99,6 +99,44 @@ export const state = [
   },
 ];
 
+export const contacts = [
+  {
+    id: 0,
+    company: "Romaguera-Crona",
+    name: "Leanne Graham",
+    city: "Gwenborough",
+    phone: "1-770-736-8031 x56442",
+  },
+  {
+    id: 1,
+    company: "Deckow-Crist",
+    name: "Ervin Howell",
+    city: "Wisokyburgh",
+    phone: "010-692-6593 x09125",
+  },
+  {
+    id: 2,
+    company: "Romaguera-Jacobson",
+    name: "Clementine Bauch",
+    city: "McKenziehaven",
+    phone: "1-463-123-4447",
+  },
+  {
+    id: 3,
+    company: "Patricia Lebsack",
+    name: "Robel-Corkery",
+    city: "South Elvis",
+    phone: "1-770-736-8031 x56442",
+  },
+  {
+    id: 4,
+    company: "Keebler LLC",
+    name: "Chelsey Dietrich",
+    city: "Roscoeview",
+    phone: "(254)954-1289",
+  },
+];
+
 // const defaultState = {
 //   review: 0,
 // };

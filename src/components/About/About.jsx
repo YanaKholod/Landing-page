@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import s from "./About.module.css";
+import CircularProgress from "@mui/material/CircularProgress";
+import { green } from "@mui/material/colors";
 
 const About = () => {
   const [posts, setPost] = useState([]);
@@ -18,7 +20,18 @@ const About = () => {
   return (
     <div className={s.aboutPage}>
       <h1>About</h1>
-      {loader && "Loading..."}
+      {loader && (
+        <CircularProgress
+          size={68}
+          sx={{
+            color: green[500],
+            position: "center",
+            top: 20,
+            left: 200,
+            zIndex: 1,
+          }}
+        />
+      )}
       <div className={s.postsWrapper}>
         {posts.map((posts) => (
           <div className={s.aboutText}>

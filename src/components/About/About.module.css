@@ -26,13 +26,13 @@
    
 }
 .aboutText >h3{
-font-size: 20px;
-color: antiquewhite;
+   font-size: 20px;
+   color: antiquewhite;
    
 }
 .aboutText >p{
-font-size: 15px;
-color: rgba(250, 235, 215, 0.685);
+   font-size: 15px;
+   color: rgba(250, 235, 215, 0.685);
 }
 .aboutText >p::first-letter{
    text-transform: uppercase;

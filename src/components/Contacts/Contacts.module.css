@@ -1,0 +1,24 @@
+.wrapper{
+   display: block;
+   text-align: center;
+}
+.wrapper >h1{
+   color: antiquewhite;
+}
+.wrapper >ul {
+   display: inline;
+   color: rgba(250, 235, 215, 0.685);
+}
+.comp{
+   font-size: 20px;
+   padding-top: 20px;
+   color: antiquewhite;
+}
+.name{
+   font-size: 18px;
+   color: antiquewhite;
+}
+.wrapper >p{
+   font-size: 15px;
+   color: rgba(250, 235, 215, 0.685);
+}
