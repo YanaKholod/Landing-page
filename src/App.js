@@ -8,6 +8,7 @@ import Courses from "./components/Courses/Courses";
 import Services from "./components/Servicepage/Services";
 import Contacts from "./components/Contacts/Contacts";
 import Course from "./components/Courses/Course";
+import Login from "./components/LogIn/Login";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" exact={true} element={<Main />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/about" element={<About />} />
             <Route exact path="/courses" element={<Courses />} />
             <Route path={"/courses/:id"} element={<Course />} />
