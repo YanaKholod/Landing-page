@@ -5,7 +5,7 @@ import s from "./Login.module.css";
 export const Login = () => {
   const {
     register,
-    formState: { error },
+    formState: { errors },
     handleSubmit,
     reset,
   } = useForm();
@@ -15,23 +15,25 @@ export const Login = () => {
   };
   return (
     <div className={s.login}>
-      <h1> Autorization</h1>
+      <h1> Authorization</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <label>
-          Name:
-          <input {...register("firstName", { required: "required field" })} />
-        </label>
-        <div className={s.nameError}>
-          {error?.firstName && <p>{error?.firstName?.message || "Error!"}</p>}
-        </div>
-        <label>
-          Last Name:
-          <input {...register("lastName", { required: "required field" })} />
-        </label>
+        <label>First name:</label>
+        <input
+          className={s.inputs}
+          {...register("firstName", { required: "required field" })}
+        />
         <div className={s.error}>
-          {error?.lastName && <p>{error?.lastName?.message || "Error!"}</p>}
+          {errors?.firstName && <p>{errors?.firstName?.message || "Error!"}</p>}
         </div>
-        <input type="submit" />
+        <label>Last name:</label>
+        <input
+          className={s.inputs}
+          {...register("lastName", { required: "required field" })}
+        />
+        <div className={s.error}>
+          {errors?.lastName && <p>{errors?.lastName?.message || "Error!"}</p>}
+        </div>
+        <input type="Submit" value="Send the form" />
       </form>
     </div>
   );

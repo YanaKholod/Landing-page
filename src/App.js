@@ -9,6 +9,7 @@ import Services from "./components/Servicepage/Services";
 import Contacts from "./components/Contacts/Contacts";
 import Course from "./components/Courses/Course";
 import Login from "./components/LogIn/Login";
+import SignUp from "./components/SignUp/SignUp";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" exact={true} element={<Main />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
             <Route path="/about" element={<About />} />
             <Route exact path="/courses" element={<Courses />} />
             <Route path={"/courses/:id"} element={<Course />} />

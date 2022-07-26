@@ -29,8 +29,6 @@
    display: flex;
    align-items:flex-start;
    margin-left: 300px;
-   
-   
 }
 .buttons >button{
    cursor: pointer;
@@ -48,4 +46,10 @@
    color: antiquewhite;
    font-size: 16px;
    padding: 5px;
+}
+
+.link{
+text-decoration: none;
+color: antiquewhite;
+
 }

@@ -21,12 +21,19 @@ const Header = () => {
           ))}
         </ul>
         <div className={s.buttons}>
-          <button className={s.butLogin}>Login</button>
-          <button className={s.butSignup}>Signup</button>
+          <button className={s.butLogin}>
+            <Link to="/login" className={s.link}>
+              Login
+            </Link>
+          </button>
+          <button className={s.butSignup}>
+            <Link to="/signup" className={s.link}>
+              Sign Up
+            </Link>
+          </button>
         </div>
       </div>
     </div>
   );
 };
-
 export default Header;
