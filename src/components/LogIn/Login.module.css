@@ -1,6 +1,5 @@
 .login{
    text-align: center;
-
 }
 .login >h1{
    color: antiquewhite;
@@ -22,7 +21,7 @@ label{
    border-radius: 15px;
    border-color: antiquewhite;
 }
-input{
+.but{
    width: 300px;
    margin-top: 30px;
    padding: 8px;

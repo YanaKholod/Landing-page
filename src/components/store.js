@@ -136,29 +136,3 @@ export const contacts = [
     phone: "(254)954-1289",
   },
 ];
-
-// const defaultState = {
-//   review: 0,
-// };
-// const reducer = (state = defaultState, action) => {
-//   switch (action.type) {
-//     case "ADD_REVIEW":
-//       return { ...state, review: state.review + action.payload };
-//     case "DELETE_REVIEW":
-//       return { ...state, review: state.review - action.payload };
-//     default:
-//       return state;
-//   }
-// };
-// const store = configureStore(reducer);
-
-// // В App.js прописываем обработчики например на кнопки добавить и удалить через onClick
-// // u getsmth u addsmth
-// const dispatch = useDispatch();
-// const cash = useSelector((state) => state.cash);
-// const addCash = (cash) => {
-//   dispatch({ type: "ADD_CASH", payload: cash });
-// };
-// const getCash = (cash) => {
-//   dispatch({ type: "GET_CASH", payload: cash });
-// };
