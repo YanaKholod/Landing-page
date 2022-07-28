@@ -1,18 +1,31 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-// import { useState, useRef } from "react";
 import s from "./SignUp.module.css";
 
+// const sendData = async () => {
+//   const response = await fetch("././store.js", {
+//     method: "POST",
+//     body: JSON.stringify({
+//       name: data.name,
+//       password: data.password,
+//       email: data.email,
+//       terms: data.email,
+//     }),
+//   });
+//   const data = await response.json();
+//   console.log(data, "server");
+// };
 const SignUp = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
+    reset();
   };
-  // const [submit, setSubmit] = useState([]);
   return (
     <div className={s.signup}>
       <h1>SignUp</h1>
