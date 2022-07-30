@@ -1,21 +1,19 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import s from "./SignUp.module.css";
+import { useState, useEffect } from "react";
 
 // const sendData = async () => {
 //   const response = await fetch("././store.js", {
 //     method: "POST",
-//     body: JSON.stringify({
-//       name: data.name,
-//       password: data.password,
-//       email: data.email,
-//       terms: data.email,
-//     }),
+//     body: JSON.stringify(data),
 //   });
 //   const data = await response.json();
 //   console.log(data, "server");
 // };
+
 const SignUp = () => {
+  const [userData, setUserData] = useState(null);
   const {
     register,
     handleSubmit,
@@ -25,7 +23,18 @@ const SignUp = () => {
   const onSubmit = (data) => {
     console.log(data);
     reset();
+    setUserData(data);
   };
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch();
+      // "https://demo.treblele.com/api/v1/ ";
+      const data = await response.json();
+      console.log(data, "serverdata");
+      setUserData(data);
+    };
+    fetchData();
+  });
   return (
     <div className={s.signup}>
       <h1>SignUp</h1>
