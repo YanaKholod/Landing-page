@@ -34,7 +34,7 @@ const About = () => {
       )}
       <div className={s.postsWrapper}>
         {posts.map((posts) => (
-          <div className={s.aboutText}>
+          <div key={posts.id} className={s.aboutText}>
             <h3>{posts.title}</h3>
             <p>{posts.body}</p>
           </div>

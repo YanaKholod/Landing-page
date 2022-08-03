@@ -5,11 +5,11 @@ import Main from "./components/Main/Main";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/About/About.jsx";
 import Courses from "./components/Courses/Courses";
-import Services from "./components/Servicepage/Services";
 import Contacts from "./components/Contacts/Contacts";
 import Course from "./components/Courses/Course";
 import Login from "./components/LogIn/Login";
 import SignUp from "./components/SignUp/SignUp";
+import Download from "./components/Download/Download";
 
 function App() {
   return (
@@ -24,8 +24,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route exact path="/courses" element={<Courses />} />
             <Route path={"/courses/:id"} element={<Course />} />
-            <Route path="/services" element={<Services />} />
             <Route path="/contacts" element={<Contacts />} />
+            <Route path="/download" element={<Download />} />
           </Routes>
         </div>
       </div>

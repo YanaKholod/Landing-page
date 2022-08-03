@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <div className={s.main}>
       <div className={s.mainText}>
-        <p1> Awaken your infinite potential</p1>
+        <p> Awaken your infinite potential</p>
         <div className={s.p2}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

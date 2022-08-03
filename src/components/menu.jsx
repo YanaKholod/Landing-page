@@ -16,16 +16,11 @@ export const menu = [
   },
   {
     id: 3,
-    title: "Services",
-    link: "/services",
-  },
-  {
-    id: 4,
     title: "Contacts",
     link: "/contacts",
   },
   {
-    id: 5,
+    id: 4,
     title: "Download",
     link: "/download",
   },

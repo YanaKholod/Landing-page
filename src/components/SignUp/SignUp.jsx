@@ -2,15 +2,16 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import s from "./SignUp.module.css";
 import { useState, useEffect } from "react";
+// function setLocal() {
+//   localStorage.setItem("authorized", "true")};
+// let preloadedState
+// const persistedTodosString = localStorage.getItem('todos')
 
-// const sendData = async () => {
-//   const response = await fetch("././store.js", {
-//     method: "POST",
-//     body: JSON.stringify(data),
-//   });
-//   const data = await response.json();
-//   console.log(data, "server");
-// };
+// if (persistedTodosString) {
+//   preloadedState = {
+//     todos: JSON.parse(persistedTodosString)
+//   }
+// }
 
 const SignUp = () => {
   const [userData, setUserData] = useState(null);
@@ -21,16 +22,21 @@ const SignUp = () => {
     reset,
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    console.log(JSON.stringify(data));
     reset();
-    setUserData(data);
   };
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch();
-      // "https://demo.treblele.com/api/v1/ ";
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/posts",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       const data = await response.json();
-      console.log(data, "serverdata");
       setUserData(data);
     };
     fetchData();
